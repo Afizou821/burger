@@ -1,8 +1,10 @@
-import React from 'react'
-
+import React from 'react';
+import  Router  from './Router';
+import * as ReactDOM from "react-dom";
 export default function App(){
-  return( <div>
-  <h1> Burger House</h1>
-
-  </div>)
+  return( 
+  <div>
+    <Router />
+  </div>
+  )
 }
