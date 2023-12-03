@@ -14,3 +14,8 @@ body{
     -ms-transition:     all .1s ease-in-out;
     transition:         all .1s ease-in-out;
 }
+
+.shadowTitlesecondary{
+    text-shadow: 3px 3px #fee7ba;
+
+}
