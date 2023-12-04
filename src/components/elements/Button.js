@@ -7,7 +7,7 @@ export default function Button({children,className,color ,theme}) {
             background="bg-secondary hover:bg-secondary-hover"
             break;
         case "danger":
-            background="bg-red-primary hover:bg-red-hover"
+            background="bg-red-primary hover:bg-red-primary-hover"
             break;
         default:
             background="bg-primary hover:bg-primary-hover"
