@@ -5,10 +5,12 @@ export default function Heading(props) {
         children,
         variant,
         theme,//style
-        display //color
+        display ,//color
+        alignement,
+        classNam
     }=props;
-    const classDefault="mt-5 uppercase";
-    let font ,color;
+    const classDefault=" uppercase";
+    let font ,color, align;
 
     switch (theme) {
         case "secondary":
@@ -17,6 +19,20 @@ export default function Heading(props) {
     
         default:
             font = "tracking-tighter"
+            break;
+    }
+
+    switch (alignement) {
+        case "center":
+            align="justify-center"
+            break;
+
+        case "center":
+            align ="justify-end"
+            break;
+        
+        default:
+            align = "justify-start"
             break;
     }
 
@@ -33,16 +49,24 @@ export default function Heading(props) {
     switch (variant) {
         case "h3":   
             return(
-                <div  className='flex items-center justify-center my-5'>
-                    <h3 className={`text-2xl  ${classDefault} ${font} ${color}`}>
+                <div  className={`flex ${align}`}>
+                    <h3 className={`text-2xl  ${classDefault} ${classNam} ${font} ${color}`}>
+                        {children}
+                    </h3>
+                </div>
+            )
+            case "h4":   
+            return(
+                <div  className={`flex ${align}`}>
+                    <h3 className={`text-lg  ${classDefault} ${classNam} ${font} ${color}`}>
                         {children}
                     </h3>
                 </div>
             )
         default:
             return(
-                <div className="flex items-center justify-center my-5">
-                    <h2 className={`${theme==="secondary" ? "text-5xl" :"text-3xl"} ${classDefault} ${font} ${color}`}>
+                <div className={`flex ${align}`}>
+                    <h2 className={`${theme==="secondary" ? "text-5xl" :"text-3xl"} ${classNam} ${classDefault} ${font} ${color}`}>
                         {children}
                     </h2>
                 </div>
