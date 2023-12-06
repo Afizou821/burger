@@ -7,7 +7,7 @@ import Image2 from '../../../medias/images/products/Product-2.jpg'
 import Image3 from '../../../medias/images/products/Product-3.jpg'
 import Heading from '../../elements/DisplayTitle/Heading';
 
-const Slide =({children ,category,Title,Image})=>{
+const Slide =({children ,category,Title,Image,alt})=>{
     return(
         <div className='grid  grid-cols-2 p-6'>
                 <div className='p-10 mb-10 '>
@@ -20,7 +20,7 @@ const Slide =({children ,category,Title,Image})=>{
                     <p className='tracking-wide text-lg leading-relaxed font-light text-gray-800'>{children}</p>
                 </div>
                 <div className='relative w-full h-full'>
-                    <img src={Image} alt='burger' className='bg-primary absolute top-0 left-0  w-full h-full object-cover object-bottom z-0'/>
+                    <img src={Image} alt={alt} className='bg-primary absolute top-0 left-0  w-full h-full object-cover object-bottom z-0'/>
                 </div>
             </div>
     )
@@ -30,13 +30,13 @@ export default function Event() {
             
 
         const items = [
-           <Slide Image={Image} category="évenement a venir" Title="Vicez la demi finale">
+           <Slide Image={Image} category="évenement a venir" Title="Vicez la demi finale" alt="description de l'image">
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
            </Slide> ,
-           <Slide Image={Image2} category="Nouveau Burger" Title="Decouvrez le killer Burger">
+           <Slide Image={Image2} category="Nouveau Burger" Title="Decouvrez le killer Burger" alt="description de l'image">
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
             </Slide> ,
-            <Slide Image={Image3} category="Nouvelle recette " Title="Le VégéBurger Arrive">
+            <Slide Image={Image3} category="Nouvelle recette " Title="Le VégéBurger Arrive" alt="description de l'image">
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
             </Slide> 
             

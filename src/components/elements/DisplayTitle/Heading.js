@@ -27,7 +27,7 @@ export default function Heading(props) {
             align="justify-center"
             break;
 
-        case "center":
+        case "rigth":
             align ="justify-end"
             break;
         
