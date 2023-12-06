@@ -4,6 +4,7 @@ import LastProduct from '../components/marketing/pageSection/LastProduct'
 import Product from '../components/marketing/pageSection/Product'
 import Event from '../components/marketing/pageSection/Event'
 import Booking from '../components/marketing/pageSection/Booking'
+import Footer from '../components/marketing/pageSection/Footer'
 
 
 export default function HomePage() {
@@ -14,6 +15,7 @@ export default function HomePage() {
         <Product></Product>
         <Event></Event>
         <Booking></Booking>
+        <Footer></Footer>
     </>
   )
 }

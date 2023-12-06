@@ -10,7 +10,7 @@ export default function Booking() {
         <div className=' w-full relative '>
             <img src={Burger} alt=" Un hambrger " className='absolute -top-20 -left-36 z-10'/>
             <img src={Sauce} alt=" Une sauce " className='absolute  bottom-0 left-0'/>
-            <img src={Assiete} alt=" Un assiete " className='absolute -right-96 -bottom-52'/>
+            <img src={Assiete} alt=" Un assiete " className='absolute -right-96 -bottom-37'/>
             <div className='max-w-3xl mx-auto px-10 py-20 '>
                 <Heading variant="h3"  alignement="center">
                     Réservation
@@ -40,8 +40,8 @@ export default function Booking() {
                         <input  type="number" name='number' id="number" autoComplete='off' className='focus:ring-primary focus:border-primary focus:border w-full border-gray-400 rounded-md p-5' placeholder='5'/>
                     </div>
                     <div>
-                        <label htmlFor="SendBooking" className='invisible'>Reservez votre repas</label>
-                        <input  type="button" name='sendBooking' id="sendBooking" autoComplete='off' className='bg-red-primary hover:bg-red-primary-hover w-full text-white font-secondary tracking-widest uppercase py-5 rounded-md animate cursor-pointer ' value="reserver votre repas"/>
+                        <label htmlFor="SendBooking" className='invisible'>Trouvez votre table</label>
+                        <input  type="button" name='sendBooking' id="sendBooking" autoComplete='off' className='bg-red-primary hover:bg-red-primary-hover w-full text-white font-secondary tracking-widest uppercase py-5 rounded-md animate cursor-pointer ' value=""/>
                     </div>
                 </form>
             </div>
