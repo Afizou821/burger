@@ -41,7 +41,7 @@ export default function Booking() {
                     </div>
                     <div>
                         <label htmlFor="SendBooking" className='invisible'>Trouvez votre table</label>
-                        <input  type="button" name='sendBooking' id="sendBooking" autoComplete='off' className='bg-red-primary hover:bg-red-primary-hover w-full text-white font-secondary tracking-widest uppercase py-5 rounded-md animate cursor-pointer ' value=""/>
+                        <input  type="button" name='sendBooking' id="sendBooking" autoComplete='off' className='bg-red-primary hover:bg-red-primary-hover w-full text-white font-secondary tracking-widest uppercase py-5 rounded-md animate cursor-pointer ' value="Trouvez une table"/>
                     </div>
                 </form>
             </div>
