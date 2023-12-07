@@ -10,6 +10,7 @@ import Footer from '../components/marketing/pageSection/Footer'
 export default function HomePage() {
   return (
     <>
+        <div className='bg-red-500 sm:bg-blue-500 md:bg-yellow-600 lg:bg-indigo-500 xl:bg-green-500 2xl:bg-pink-600 w-full h-20'></div>
         <HeroTop />
         <LastProduct></LastProduct>
         <Product></Product>
