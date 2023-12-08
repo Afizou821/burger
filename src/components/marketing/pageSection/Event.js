@@ -9,17 +9,17 @@ import Heading from '../../elements/DisplayTitle/Heading';
 
 const Slide =({children ,category,Title,Image,alt})=>{
     return(
-        <div className='grid  grid-cols-2 p-6'>
-                <div className='p-10 mb-10 '>
+        <div className='grid  md:grid-cols-2 p-3 md:p-6'>
+                <div className='p-5 md:p-10 md:mb-10 '>
                     <Heading variant="h4">
                         {category}
                     </Heading>
                     <Heading theme="secondary" variant="h3" className="mb-5">
                         {Title}
                     </Heading>
-                    <p className='tracking-wide text-lg leading-relaxed font-light text-gray-800'>{children}</p>
+                    <p className='tracking-wide text-lg leading-relaxed font-light mb-0 md:mb-10   text-gray-800'>{children}</p>
                 </div>
-                <div className='relative w-full h-full'>
+                <div className='relative w-full h-96 md:h-full'>
                     <img src={Image} alt={alt} className='bg-primary absolute top-0 left-0  w-full h-full object-cover object-bottom z-0'/>
                 </div>
             </div>

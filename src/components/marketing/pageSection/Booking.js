@@ -8,17 +8,17 @@ export default function Booking() {
   return (
     <Container>
         <div className=' w-full relative '>
-            <img src={Burger} alt=" Un hambrger " className='absolute -top-20 -left-36 z-10'/>
-            <img src={Sauce} alt=" Une sauce " className='absolute  bottom-0 left-0'/>
-            <img src={Assiete} alt=" Un assiete " className='absolute -right-96 -bottom-37'/>
-            <div className='max-w-3xl mx-auto px-10 py-20 '>
+            <img src={Burger} alt=" Un hambrger " className='hidden md:block absolute -top-20 -left-36 z-10'/>
+            <img src={Sauce} alt=" Une sauce " className='hidden lg:block absolute  bottom-0 left-0'/>
+            <img src={Assiete} alt=" Un assiete " className='hidden lg:block absolute -right-96 -bottom-37'/>
+            <div className=' sm:max-w-3xl py-5 mx-auto sm:px-10  md:py-20 '>
                 <Heading variant="h3"  alignement="center">
                     Réservation
                 </Heading>
-                <Heading alignement="center" theme="secondary" classNam="mt-5" >
+                <Heading alignement="center " theme="secondary" classNam="mt-5 text-center" >
                     Reservez votre table
                 </Heading>
-                <form className='grid grid-cols-2 gap-x-7 gap-y-6 mt-20'>
+                <form className='grid sm:grid-cols-2 gap-x-7 gap-y-6 mt-20'>
                     <div>
                         <label htmlFor="Nom" className='block text-sm font-medium text-gray-700'>Nom</label>
                         <input  type="text" name='name' id="name" autoComplete='off' className='focus:ring-primary focus:border-primary focus:border w-full border-gray-400 rounded-md p-5' placeholder='Jhon doe'/>
